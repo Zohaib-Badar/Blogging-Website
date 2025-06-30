@@ -1,0 +1,17 @@
+{
+  "name": "blogging-website",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir dist",
+    "lint:html": "htmlhint \"src/**/*.html\"",
+    "lint:css": "stylelint \"styles/**/*.css\"",
+    "lint": "npm run lint:html && npm run lint:css"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.3",
+    "htmlhint": "^1.2.5",
+    "stylelint": "^16.5.0",
+    "stylelint-config-standard": "^34.0.0"
+  }
+}
