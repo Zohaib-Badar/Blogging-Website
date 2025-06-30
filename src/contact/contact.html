@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us – Blogging Website</title>
+    <link rel="stylesheet" href="../../styles/contact.css" />
+  </head>
+  <body>
+    <header><h1>Contact Us</h1></header>
+
+    <nav>
+      <a href="../home/index.html">Home</a>
+      <a href="../blog/index.html">Blog</a>
+      <a href="../contact/index.html">Contact Us</a>
+    </nav>
+
+    <main>
+      <form id="contact‑form">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="status"></p>
+    </main>
+
+    <footer>&copy; 2025 Blogging Website</footer>
+
+    <script>
+      // simple front‑end success notice (no backend)
+      document.getElementById('contact‑form').addEventListener('submit', e => {
+        e.preventDe
